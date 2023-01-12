@@ -4,7 +4,7 @@
 
 @section('contenuto-main')
 
-<div class="mainDiv">
+
     <div class="sec2">
       <button class="relative button">CURRENT SERIES</button>
     </div>
