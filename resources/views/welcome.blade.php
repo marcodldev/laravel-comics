@@ -10,7 +10,7 @@
     </div>
     <section class="sec1">
       <div class="cards">
-        @foreach ($arrayFumetti as $elem)
+        @foreach ($arrayFumetti as $key => $elem)
         <div class="cardFumetto">
             <img class="flex" src="{{$elem['thumb']}}" :alt="">
             <h4 class="flex"> {{$elem['series']}}</h4>

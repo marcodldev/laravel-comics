@@ -232,7 +232,7 @@ Route::get('/', function () {
     return view('welcome', compact('arrayFumetti'));
 });
 
-Route::get('/single', function () {
+Route::get('/single/{key}', function ($key) {
 
     $arrayFumetti = [
         [
@@ -448,5 +448,12 @@ Route::get('/single', function () {
         ],
     ];
 
-    return view('single', compact('arrayFumetti'));
+    if ( is_numeric($key) && $key >= 0 && $key < count($arrayFumetti)) {
+        $fumetto_singolo = $arrayFumetti[$key];
+    } else {
+        abort(404);
+    }
+
+
+    return view('single', compact('fumetto_singolo'));
 });
