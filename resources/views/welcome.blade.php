@@ -15,6 +15,7 @@
             <img class="flex" src="{{$elem['thumb']}}" :alt="">
             <h4 class="flex"> {{$elem['series']}}</h4>
             {{-- <a class="button btn1" href="{{ route('single-page', compact('key')) }}">Clicca per info</a> --}}
+            <a href="{{ route('single', compact('key')) }}" class="button btn1">Clicca qui per info</a>
           </div>
             
         @endforeach

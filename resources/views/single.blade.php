@@ -35,8 +35,8 @@
 
                     <p class="fw-bold text-muted">{!! $fumetto_singolo['description'] !!}</p>
                 </div>
-                <div>
-                    <h3>ADVERTISEMENT</h3>
+                <div class="w-25">
+                    <h3 class="text-end fs-6 text">ADVERTISEMENT</h3>
                     <img src="{{ asset('img/adv.jpg') }}" alt="adv">
                 </div>
             </div>

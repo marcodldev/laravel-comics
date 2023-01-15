@@ -10,6 +10,7 @@
   .btn1 {
     justify-content: center;
     width: 15rem;
+    text-decoration-line: none;
   }
   .button {
     padding: 10px;
