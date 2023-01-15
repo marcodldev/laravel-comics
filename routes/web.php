@@ -457,3 +457,4 @@ Route::get('/single/{key}', function ($key) {
 
     return view('single', compact('fumetto_singolo'));
 });
+// ->name('single')
